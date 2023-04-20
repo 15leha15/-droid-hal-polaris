@@ -16,4 +16,12 @@
 # Don't create systemd mount units for these
 %define makefstab_skip_entries /dev/cpuctl /dev/stune /sys/fs/pstore /mnt/vendor/persist
 
+%define straggler_files \
+/bugreports\
+/d\
+/product\
+/sdcard\
+/system_ext\
+%{nil}
+
 %include rpm/dhd/droid-hal-device.inc
